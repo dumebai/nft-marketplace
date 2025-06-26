@@ -1,7 +1,7 @@
 // app/buy-nft/[contractAddress]/[tokenId]/page.tsx
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, use } from "react"
 import { useParams, useRouter } from "next/navigation"
 import {
     useAccount,
@@ -118,6 +118,7 @@ export default function BuyNftPage() {
         }
     }, [step, isPurchaseSuccess, router])
 
+    
     // Check if the current user is the seller
     const isSeller = seller === address
 

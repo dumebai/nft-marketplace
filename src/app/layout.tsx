@@ -1,8 +1,10 @@
+
 import type { Metadata } from "next"
 import "./globals.css"
 import Header from "@/components/Header"
 import { type ReactNode } from "react"
 import { Providers } from "./providers"
+
 
 export const metadata: Metadata = {
     title: "NftMarketplace",
